@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+#score {
+  color: black;
+  height: auto;
+  border-radius: 7%;
+  font-size: 21px;
+  position: absolute;
+  left: 45%;
+  margin-top: 30px;
+  display: block;
+  text-align: center
+}
+
+.gameBoard {
+  width: 100%;
+  height: 550px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.chao {
+  width: 100%;
+  height: 204px;
+  background-image: url(./img/janelas.png);
+}
+
+.espinhos {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  animation: none;
+  display: none;
+}
+
+#restartButton {
+  border: none;
+  color: rgb(251, 218, 101);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 84vh;
+  cursor: pointer;
+  animation: blink-backward 1s infinite alternate;
+  background-color: black;
+  border-radius: 10%;
+  font-size: 15px;
+}
+
+ @keyframes blink-forward { 
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes blink-backward {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.ellie {
+  width: 200px;
+  position: absolute;
+  margin-top: 416px;
+}
+
+.jump {
+  animation: jump 500ms ease-out;
+}
+
+@keyframes espinhosAnimacao {
+  from {
+    right: -80px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  40% {
+    bottom: 100px;
+  }
+
+  50% {
+    bottom: 100px;
+  }
+
+  60% {
+    bottom: 100px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.fogos {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-top: 240px;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  animation: blink-forward 1s infinite alternate, blink-backward 1s infinite alternate;
+  color: rgb(255, 54, 205);
+}
+
+#gameOver {
+  position: absolute;
+  display: none;
+  z-index: 10;
+  top: 50%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  color: red;
+  animation: blink-forward 1s infinite alternate, blink-backward 1s infinite alternate;
+  }
+  

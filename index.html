@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="fogos"><h1></h1></div>
+
+    <section class="gameBoard">
+      <div id="score">
+        Score: <span id="teste">0</span><br />
+        Maior score: <span id="maiorScore"></span>
+      </div>
+      <img src="img/espin.gif" class="espinhos" />
+      <img src="img/personagem-ezgif.com-rotate.gif" class="ellie" />
+      <img
+        src="https://i.pinimg.com/originals/6d/42/2f/6d422f3f45cd62c3150a6365ff805469.gif"
+        width="1570"
+        height="600"
+      />
+    </section>
+
+    <section class="chao"></section>
+
+    <div id="gameOver">
+      <img src="img/pngimg.com - game_over_PNG38 (1).png" width="300" height="205">
+    </div>
+
+
+    <div id="restartButton">
+      <h1>CLIQUE AQUI PARA INICIAR O JOGO</h1>
+    </div>
+
+    <audio preload="auto" autoplay loop>
+      <source
+        src="./src/Take On Me (8 Bit Remix Cover Version) [Tribute to A-ha] - 8 Bit Universe.mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="msc/Thriller (8 Bit Remix Cover Version) [Tribute to Michael Jackson] - 8 Bit Universe.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
